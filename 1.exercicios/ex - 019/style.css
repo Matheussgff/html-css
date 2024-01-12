@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*
+     em HTML é id = em CSS é #
+     em HTML é class = em CSS é .(ponto)
+*/
+
+body {
+    background-color: #406656;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #08FF98;
+}
+
+h1#principal {    /* => seletor personalizado */
+    text-align: center;
+    background-color: #429975; 
+    color: white;
+}
+
+h2 {
+    color: #2FCC8B;
+}
+
+.basico { /* => não precisa do nome do elemento h2 no class */
+    color: #2FCC8B;
+    font-weight: bold;
+}
+
+.intermediario {  /* não esqueça o ponto */
+    color: #ccbc2f;
+}
+
+.avancado {
+    color: #cc2f2f;
+}
+
+.destaque {
+    background-color: #867d2d;
+}
+
+.texto {
+    text-align: justify;
+}

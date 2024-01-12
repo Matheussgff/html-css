@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: gray;
+        }
+
+        header {
+            background-color: blueviolet;
+            padding: 50px 100px;
+            width: 100%;
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            padding-bottom: 100%;
+            border-radius: 10px;
+
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        main > h1 {
+            border: 10px solid black;
+            
+        }
+
+        main > p {
+            margin: 10px;
+            padding-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+        
+        div {
+            display: inline;
+        }
+        
+        div > p.escondido {
+            display: none;
+        }
+
+        div:hover > p.escondido {
+            display: block;
+            color: red;
+            background-color: black;
+        }
+
+        div.video {
+            background-color: aqua;
+            margin: 10px -20px 10px -10px;
+            padding: 20px 50%;
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Viajando na Maionese</h1>
+    </header>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit! Incidunt, labore, vero illo, a corporis consequuntur vel iste aliquid quam quidem autem. Rerum nesciunt et harum impedit, corrupti ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iusto minus quos illum nesciunt optio aliquid doloribus qui? Ducimus dolorum veritatis earum ut vitae amet vel doloremque provident. Saepe, exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt, odit quia earum natus consequatur sint architecto? Enim, porro modi! Laudantium, sed quod quae ratione harum praesentium exercitationem voluptas ut.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit! Incidunt, labore, vero illo, a corporis consequuntur vel iste aliquid quam quidem autem. Rerum nesciunt et harum impedit, corrupti ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iusto minus quos illum nesciunt optio aliquid doloribus qui? Ducimus dolorum veritatis earum ut vitae amet vel doloremque provident. Saepe, exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt, odit quia earum natus consequatur sint architecto? Enim, porro modi! Laudantium, sed quod quae ratione harum praesentium exercitationem voluptas ut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor eaque dolorum explicabo            
+            <div>
+                Verde
+                <p class="escondido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vero explicabo voluptas ad quisquam rem, qui incidunt inventore quidem, sint aperiam. Consequuntur recusandae, quibusdam voluptatibus repudiandae quas non consectetur veritatis.</p>
+            </div> recusandae quaerat repellendus ipsum distinctio, impedit, minus magni architecto eligendi quasi! Numquam perspiciatis est eum laborum quod!
+
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=lXyDFEJ-y4a6B3tn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </main>
+    
+</body>
+</html>

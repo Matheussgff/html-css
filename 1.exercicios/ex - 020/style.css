@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+div{ /* div: contêiner genérico */
+    display: inline-block; /* inline-block: tudo na mesma linha */
+    background-color: lightgray;
+    border: 1px solid black; /* bolder(borda): 1px(largura) solid(tipo) black(cor) */
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div:hover { /* Hover: passar o mouse em cima */ /* : => Pseudo-classe */
+    background-color: yellow;
+}

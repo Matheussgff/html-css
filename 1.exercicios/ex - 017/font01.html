@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body  {
+            font-family: 'Courier New', Courier, monospace ;
+             /* Sempre irá haver mais fontes para uma melhor combinação atendendo vários navegadores, com o intuito de criar uma combinação segura (Safe font combinations) para o site.  */
+             font-size: 1cm ;
+            /*
+            Medidas Absolutas
+            cm, mm, in(1 polegada equivale a 2,4cm reprensentado assim: 1.2in), px, pt, pc
+
+            Medidas Relativas
+            em(medida do tamanho atual da fonte com referência na letra m de uma fonte), ex(altura x), rem, vw(largura da tela em porcentagem),  vh, %
+            16px geralmente é = 1em
+            Recomendação de uso: use px e em 
+            */
+            font-weight:lighter ;
+            /* valores para fontes(peso ou negrito): lighter, normal, bold, bolder 
+               valores para fontes númericas: 100 à 900 */
+            /* weight(peso); width(largura); height(altura) */
+            font-style: italic;
+            /* Existe variações de style de fontes: italic e normal */
+            text-decoration: underline;
+            /* underline: linha sublinhada */
+        }
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-size: 3em ;
+            font-style: italic;
+            /* shorthand(maozinha): cria uma declaração única juntando todas as declarações anteriores em uma só linha
+            shorthand font: 
+            font: font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'gill sans', 'sans-serif' /* -> Propiedade shorthand */
+        }
+        h2 {
+            font: bold 2em 'work sans', 'sans-serif'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit id dolores, voluptate cupiditate exercitationem ex recusandae sed officiis minima quam atque quas necessitatibus aperiam aut placeat dolorem itaque nemo at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis, magni, at iusto nemo impedit sed architecto minus adipisci in odit fugit molestias necessitatibus, hic quo quidem tenetur nulla dicta.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit consectetur nisi magnam, fugiat rerum nulla odio ex modi nesciunt recusandae ad molestias sapiente doloremque suscipit ipsum quae id temporibus!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloribus natus, ad vitae repudiandae fuga eaque inventore veritatis, voluptas optio incidunt! Assumenda delectus sint saepe incidunt nisi. Iusto, reiciendis non.</p>
+    
+</body>
+</html>
